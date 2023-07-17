@@ -12,12 +12,11 @@
 // isPrime(10); // false
 
 
-
-function isPrime (num=prompt('Введите число')) {
+const nam = +prompt('Введите число');
+function isPrime (num) {
     let check
     for (let i = 2; i < num; i++){
         let answer = num / i;
-        console.log(answer)
         if (Number.isInteger(answer) === true){
             check = false; break
         }else{
@@ -26,4 +25,4 @@ function isPrime (num=prompt('Введите число')) {
     } return check
 }
 
-console.log(isPrime())
+console.log(isPrime(nam))
